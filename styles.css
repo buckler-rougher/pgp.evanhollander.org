@@ -1,9 +1,9 @@
 @import url('https://cdn.evanhollander.org/themes.css');
 
 @font-face {
-  font-family: 'RemusVariable';
-  src: url('https://cdn.evanhollander.org/fonts/RemusVariableVF.woff2') format('woff2-variations'),
-       url('https://cdn.evanhollander.org/fonts/RemusVariableVF.woff2') format('woff2');
+  font-family: 'Inter';
+  src: url('https://cdn.evanhollander.org/fonts/InterVariableVF.woff2') format('woff2-variations'),
+       url('https://cdn.evanhollander.org/fonts/InterVariableVF.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -22,7 +22,7 @@
     --border-radius: 4px;
     --spacing: 2rem;
     --content-width: 760px;
-    --font-sans: 'RemusVariable', sans-serif;
+    --font-sans: 'Inter', sans-serif;
     --font-serif: 'EB Garamond', Georgia, serif;
 }
 
