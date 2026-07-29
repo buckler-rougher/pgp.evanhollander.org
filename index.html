@@ -61,7 +61,7 @@
                 <h2>Key</h2>
 
                 <div class="key-card" data-key="email">
-                    <h3>Email <span class="badge">ProtonMail</span></h3>
+                    <h3>Email</h3>
                     <p class="key-purpose">For encrypted or signed email correspondence.</p>
                     <dl>
                         <dt>Key ID</dt>
@@ -131,7 +131,7 @@
             const idField = card.querySelector('[data-field="id"]');
             const fpField = card.querySelector('[data-field="fingerprint"]');
             const downloadLink = card.querySelector('[data-field="download"]');
-            const badge = card.querySelector('.badge');
+            const heading = card.querySelector('h3');
 
             const [idRes, fpRes, keyRes] = await Promise.allSettled([
                 fetch(`keys/${slug}-id.txt`, { cache: 'no-store' }),
@@ -158,7 +158,7 @@
                 const pending = document.createElement('span');
                 pending.className = 'badge pending';
                 pending.textContent = 'Pending';
-                badge.after(pending);
+                heading.append(pending);
             }
         });
     </script>
